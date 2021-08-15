@@ -42,3 +42,20 @@ Recipe API - Backend built using Test Driven Development (TDD)
     1. Setup -> Create sample database objects
     2. Execution -> Call the code
     3. Assertions -> Confirm expected output
+
+## Commands 
+Build the Dockerfile
+```
+ docker build .
+
+```
+Build the docker-compose config
+``` 
+ docker-compose build
+
+```
+Create Django project
+``` 
+docker-compose run app sh -c "django-admin.py startproject app ."
+
+```
