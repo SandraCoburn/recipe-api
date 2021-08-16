@@ -75,6 +75,18 @@ To run a test:
 docker-compose run app sh -c "python manage.py test"
 ```
 
+To create a new app:
+
+```
+docker-compose run app sh -c "python manage.py startapp core"
+```
+
+To make migrations:
+
+```
+ docker-compose run app sh -c "python manage.py makemigrations core"
+```
+
 1. Run `docker-compose down` to clear any containers that might currently exist
 
 2. Run `docker-compose build` to rebuild the containers
