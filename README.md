@@ -1,7 +1,9 @@
 # recipe-api
+
 Recipe API - Backend built using Test Driven Development (TDD)
 
 ## Tech Stack
+
 - Python
 - Django
   - Python web framework
@@ -44,19 +46,37 @@ Recipe API - Backend built using Test Driven Development (TDD)
     3. Assertions -> Confirm expected output
 - [Python Packages](https://pypi.org/) Index
 
-## Commands 
-Build the Dockerfile
+## Commands
+
+Build the Dockerfile:
+
 ```
  docker build .
 
 ```
-Build the docker-compose config
-``` 
+
+Build the docker-compose config:
+
+```
  docker-compose build
 
 ```
-Create Django project
-``` 
+
+Create Django project:
+
+```
 docker-compose run app sh -c "django-admin.py startproject app ."
 
 ```
+
+To run a test:
+
+```
+docker-compose run app sh -c "python manage.py test"
+```
+
+1. Run `docker-compose down` to clear any containers that might currently exist
+
+2. Run `docker-compose build` to rebuild the containers
+
+3. Run `docker-compose up`
