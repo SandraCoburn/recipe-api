@@ -92,6 +92,13 @@ To make migrations:
 docker-compose run app sh -c "python manage.py migrate"
 ```
 
+Endpoints:
+
+```
+http://127.0.0.1:8000/api/user/token/
+http://127.0.0.1:8000/api/user/create/
+```
+
 1. Run `docker-compose down` to clear any containers that might currently exist
 
 2. Run `docker-compose build` to rebuild the containers
