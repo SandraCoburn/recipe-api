@@ -85,6 +85,11 @@ To make migrations:
 
 ```
  docker-compose run app sh -c "python manage.py makemigrations core"
+
+```
+
+```
+docker-compose run app sh -c "python manage.py migrate"
 ```
 
 1. Run `docker-compose down` to clear any containers that might currently exist
